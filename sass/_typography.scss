@@ -1,0 +1,31 @@
+html {
+	font-family: 'Avenir Next', Helvetica Neue, Arial, sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+.primary-naviguation {
+	text-transform: uppercase;
+	letter-spacing: 0.16em;
+	font-size: 0.78em;
+	font-weight: 600;
+}
+
+
+h1 {
+	font-size: 1.5em;
+	font-weight: 500;
+	color: $secondary-color;
+	line-height: 120%;
+}
+
+.who-i-am, .what-i-do {
+	font-size: 0.9em;
+	font-weight: normal;
+	color: $tertiary-color;
+}
+
+.fancy-ampersand {
+	font-family: 'Baskerville', sans-serif;
+	font-style: italic;
+}
+

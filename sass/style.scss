@@ -9,4 +9,86 @@ Version: 1.0
 */
 
 @import "compass/reset";
-body{background: #fff; padding: 2px;}
+@import "compass";
+
+
+@import "colors";
+@import "typography";
+@import "mixin";
+@import "global";
+
+
+
+
+
+body {
+
+	background: $primary-color;
+	padding: 6px 0 0 0;
+
+	& header {
+		background: $tertiary-color-lightest;
+	}
+
+	& .center {
+		min-width: 960px;
+		max-width: 1080px;
+		padding: 0 20px;
+		margin: auto;
+	}
+}
+
+.top {
+	padding: 40px;
+}
+
+.logotype {
+	float: left;
+	@include clear;
+}
+
+.primary-naviguation {
+	float: right;
+
+	li {
+		@include inline-block;
+
+		a {
+			padding: 15px 20px;
+
+			&.current-page {
+				border-bottom: 1px solid $primary-color;
+				color: $primary-color;
+			}
+
+			&:hover {
+				color: $tertiary-color;
+			}
+		}
+	}
+}
+
+
+.cover-article {
+	margin: 20px 0 0 0;
+
+	h1 {
+		@include inline-block;
+		margin: 80px 0 0 60px;
+
+			> span {
+				display: block;
+		}
+	}
+}
+
+.cover-image {
+	@include inline-block;
+	line-height: 0;
+
+	& img {
+		height: 311px;
+		width: 367px;
+	}
+}
+
