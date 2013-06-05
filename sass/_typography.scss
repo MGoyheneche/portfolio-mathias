@@ -1,21 +1,26 @@
 html {
 	font-family: 'Avenir Next', Helvetica Neue, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing:antialiased;
+}
+
+em{
+	font-weight: 500;
 }
 
 .primary-naviguation {
 	text-transform: uppercase;
 	letter-spacing: 0.16em;
 	font-size: 0.78em;
-	font-weight: 600;
+	font-weight: 700;
 }
 
+.primary {
+	color: $primary-color;
+}
 
-h1 {
-	font-size: 1.5em;
-	font-weight: 500;
-	color: $secondary-color;
-	line-height: 120%;
+.secondary {
+	color: $tertiary-color-light;
 }
 
 .who-i-am, .what-i-do {
@@ -27,5 +32,33 @@ h1 {
 .fancy-ampersand {
 	font-family: 'Baskerville', sans-serif;
 	font-style: italic;
+}
+
+.button {
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: 500;
+	color: $secondary-color;
+	line-height: 120%;
+}
+
+h2 {
+	font-size: 1.3em;
+	font-weight: 400;
+	color: $secondary-color;
+	line-height: 120%;
+}
+
+.catch-word {
+
+	h2 {
+		padding: 40px 0;
+		line-height: 170%;
+		color: $tertiary-color;
+	}
 }
 

@@ -13,7 +13,9 @@
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
-		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="<?php bloginfo( 'template_directory' ); ?>/javascripts/main.js"></script>
+		<script src="<?php bloginfo( 'template_directory' ); ?>/javascripts/plugins.js"></script>
+		<script src="<?php bloginfo( 'template_directory' ); ?>/javascripts/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -21,7 +23,7 @@
 		<![endif]-->
 
 
-		<header>
+		<section>
 			<div class="center">
 				<div class="top">
 					<div class="logotype">
@@ -41,20 +43,73 @@
 						<div class="cover-image">
 							<img src="<?php bloginfo( 'template_directory' ); ?>/images/mathias-goyheneche-photo.png" alt="Mathias Goyheneche | Designer & développeur" class="cover-photo">
 						</div><!--
-				 --><h1>
-							<span class="hello">Bonjour,</span>
-							<span class="who-i-am">je suis Mathias, </span>
-							<span class="what-i-do">
-								<em>designer</em>
-								<span class="fancy-ampersand">&</span>
-								<em>développeur</em> *.
-							</span>
-						</h1>
+				 --><div class="cover-text">
+				 			<h1>
+								<span class="hello">Bonjour,</span>
+								<span class="who-i-am">je suis Mathias, </span>
+								<span class="what-i-do">
+									<em>designer</em>
+									<span class="fancy-ampersand">&</span>
+									<em>développeur</em> *.
+								</span>
+							</h1>
+							<hr />
+							<a href="#" class="button primary">Consultez mes travaux</a><!--
+							--><a href="#" class="button secondary">Contactez-moi</a>
+						</div>
 					</header>
 				</article>
 			</div>
 
-		</header>
+		</section>
+
+		<section class="page-body">
+			<div class="center">
+				<article class="catch-word">
+					<hr />
+						<h2>
+							Si je ne suis pas en train de <em class="primary">designer</em> ou de <em class="primary">développer</em>,<br />
+							je suis, probablement, en train de prendre des <em class="primary">photos</em>,<br />
+							ou de jouer des <em class="primary">percussions</em>.
+						</h2>
+					<hr />
+				</article>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+		</section>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>

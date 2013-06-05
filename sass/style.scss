@@ -26,7 +26,7 @@ body {
 	background: $primary-color;
 	padding: 6px 0 0 0;
 
-	& header {
+	& section {
 		background: $tertiary-color-lightest;
 	}
 
@@ -39,7 +39,7 @@ body {
 }
 
 .top {
-	padding: 40px;
+	padding: 40px 0;
 }
 
 .logotype {
@@ -70,11 +70,30 @@ body {
 
 
 .cover-article {
-	margin: 20px 0 0 0;
+	margin: 50px 0 0 0;
+	text-align: center;
+
+	.cover-text {
+		@include inline-block;
+		vertical-align: bottom; // surcharge pas top cool
+		padding: 0 0 40px;
+		text-align: left;
+
+		hr{
+				background: #fff;
+				margin: 40px 0;
+		}
+
+		em{
+			border-bottom: 1px solid $primary-color;
+			padding: 0 0 2px 0;
+		}
+	}
+
 
 	h1 {
 		@include inline-block;
-		margin: 80px 0 0 60px;
+		vertical-align: bottom; // surcharge pas top cool
 
 			> span {
 				display: block;
@@ -85,10 +104,50 @@ body {
 .cover-image {
 	@include inline-block;
 	line-height: 0;
+	margin: 0 100px 0 0;
 
 	& img {
 		height: 311px;
 		width: 367px;
 	}
 }
+
+.button {
+	padding: 15px 25px;
+	@include border-radius(4px);
+	@include inline-block;
+
+
+	&.primary {
+		border: 2px solid $primary-color;
+	}
+
+	&.secondary {
+		border: 2px solid $tertiary-color-light;
+	}
+
+	+ .button {
+		margin: 0 0 0 20px;
+	}
+}
+
+
+/*
+ *
+ *
+ * center-page
+ */
+
+
+.catch-word {
+text-align: center;
+
+	hr {
+		background: $tertiary-color-light;
+		width: 12%;
+		display: inline-block;
+	}
+}
+
+
 
