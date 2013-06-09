@@ -60,7 +60,6 @@
 					</header>
 				</article>
 			</div>
-
 		</section>
 
 		<section class="page-body">
@@ -74,42 +73,67 @@
 						</h2>
 					<hr />
 				</article>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+
+				<article class="capability">
+					<h1>Design</h1><!--
+					 --><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, blanditiis, itaque esse commodi minus distinctio provident consectetur quisquam perspiciatis quasi enim labore eius ad obcaecati sint. Numquam laborum odio sequi.</p>
+				</article>
+				<article class="capability">
+					<h1>Développement</h1><!--
+					--><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, blanditiis, itaque esse commodi minus distinctio provident consectetur quisquam perspiciatis quasi enim labore eius ad obcaecati sint. Numquam laborum odio sequi.</p>
+				</article>
+				<article class="capability">
+					<h1>Photographie</h1><!--
+					 --><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, blanditiis, itaque esse commodi minus distinctio provident consectetur quisquam perspiciatis quasi enim labore eius ad obcaecati sint. Numquam laborum odio sequi.</p>
+				</article>
+				<article class="capability">
+					<h1>Percussions</h1><!--
+					 --><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, blanditiis, itaque esse commodi minus distinctio provident consectetur quisquam perspiciatis quasi enim labore eius ad obcaecati sint. Numquam laborum odio sequi.</p>
+				</article>
+
+				<div class="center-auto">
+					<a href="#" class="button primary">Consulter mon cv</a>
+				</div>
+
 			</div>
 		</section>
+
+		<section class="some-figures">
+			<div class="center">
+				<h1>Quelques chiffres</h1>
+				<h2 class="h5-like">Concernant ma vie d'être humain</h2>
+				<article class="column-4">
+					<h1 class="category">Respirations</h1>
+					<h2 class="since">depuis ma naissance</h2>
+					<div class="figure">3311.2M</div>
+				</article><!--
+			--><article class="column-4">
+					<h1 class="category">Battements de cils</h1>
+					<h2 class="since">depuis ma naissance</h2>
+					<div class="figure">3651.4M</div>
+				</article><!--
+			--><article class="column-4">
+					<h1 class="category">Littres d'eau bu</h1>
+					<h2 class="since">depuis ma naissance</h2>
+					<div class="figure">16.6k</div>
+				</article><!--
+			--><article class="column-4">
+					<h1 class="category">Heures de sommeil</h1>
+					<h2 class="since">depuis ma naissance</h2>
+					<div class="figure">61.3k</div>
+				</article>
+			</div>
+		</section>
+
+		<footer>
+			<nav class="social">
+				<ul>
+					<li><a href="#"><img src="<?php bloginfo( 'template_directory' ); ?>/images/twitter.png" alt="Twitter | @MGoyheneche"></a></li>
+					<li><a href="#"><img src="<?php bloginfo( 'template_directory' ); ?>/images/dribbble.png" alt="Dribbble | /MGoyheneche"></a></li>
+					<li><a href="#"><img src="<?php bloginfo( 'template_directory' ); ?>/images/github.png" alt="Github | /MGoyheneche"></a></li>
+				</ul>
+			</nav>
+		</footer>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>

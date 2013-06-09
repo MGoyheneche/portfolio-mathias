@@ -19,8 +19,6 @@ Version: 1.0
 
 
 
-
-
 body {
 
 	background: $primary-color;
@@ -36,19 +34,25 @@ body {
 		padding: 0 20px;
 		margin: auto;
 	}
+
+	& .center-auto {
+		text-align: center;
+
+	}
 }
 
 .top {
-	padding: 40px 0;
+	padding: 40px 0 0;
+	@include clear;
 }
 
 .logotype {
 	float: left;
-	@include clear;
 }
 
 .primary-naviguation {
 	float: right;
+	margin: 12px 0 0;
 
 	li {
 		@include inline-block;
@@ -70,7 +74,7 @@ body {
 
 
 .cover-article {
-	margin: 50px 0 0 0;
+	margin: 70px 0 0 0;
 	text-align: center;
 
 	.cover-text {
@@ -114,16 +118,16 @@ body {
 
 .button {
 	padding: 15px 25px;
-	@include border-radius(4px);
+	@include border-radius($border-radius);
 	@include inline-block;
 
 
 	&.primary {
-		border: 2px solid $primary-color;
+		@include action-border($primary-color);
 	}
 
 	&.secondary {
-		border: 2px solid $tertiary-color-light;
+		@include action-border($tertiary-color-light);
 	}
 
 	+ .button {
@@ -140,14 +144,123 @@ body {
 
 
 .catch-word {
-text-align: center;
+	text-align: center;
+	margin: 70px 0 150px 0;
 
-	hr {
-		background: $tertiary-color-light;
-		width: 12%;
-		display: inline-block;
+		hr {
+			background: $tertiary-color-light;
+			width: 12%;
+			display: inline-block;
+		}
+}
+
+.some-figures {
+	padding: 70px 0;
+	margin: 0 0 162px; /* 162 = footer height (because of position: fixed) */
+
+	.column-4 {
+		padding: 25px 45px;
+		margin: 40px 0 0;
+	}
+
+	.figure {
+		margin: 30px 0 0;
+	}
+
+	.column-4 + .column-4 {
+		border-left: 1px solid $tertiary-color-light;
+	}
+}
+
+.social {
+	text-align: center;
+
+	a {
+		display: block;
+
+		img {
+			padding: 25px;
+		}
+	}
+
+	li {
+		@include inline-block;
+	}
+}
+
+.capability {
+	margin: 80px 0;
+
+	h1 {
+		@include inline-block;
+		width: 25%;
+		text-align: right;
+		@include box-sizing(border-box);
+		padding: 0 40px 0 0;
+	}
+	p {
+		@include inline-block;
+		width: 75%;
 	}
 }
 
 
 
+
+/*
+ *
+ *
+ * work index page
+ */
+
+
+.work-index {
+	@include action-border($tertiary-color-lightest);
+	@include border-radius($border-radius);
+	padding: 10px;
+	@include box-sizing(border-box);
+	margin: 120px 0;
+
+
+
+
+	.informations-container {
+		width: 33%;
+		@include inline-block;
+		padding: 10px 20px 0 10px;
+		@include box-sizing(border-box);
+
+		p {
+			margin: 20px 0 0;
+		}
+
+		a {
+			margin: 40px 0 0;
+		}
+	}
+
+	.thumbnail-container {
+		width: 67%;
+		@include inline-block;
+		overflow: hidden;
+		height: 100%;
+		position: relative;
+
+		&::after {
+		 @include box-shadow(rgba(0, 0, 0, 0.10) 0 0 8px 0 inset);
+		 position: absolute;
+		 top: 0;
+		 left: 0;
+		 width: 100%;
+		 height: 100%;
+		 z-index: 2;
+		 content: "";
+		}
+
+		a {
+			line-height: 0;
+			display: block;
+		}
+	}
+
+}

@@ -8,6 +8,11 @@ em{
 	font-weight: 500;
 }
 
+p{
+	line-height: 1.35em;
+	color: $tertiary-color;
+}
+
 .primary-naviguation {
 	text-transform: uppercase;
 	letter-spacing: 0.16em;
@@ -39,14 +44,14 @@ em{
 	font-weight: 500;
 }
 
-h1 {
+h1, h1-like {
 	font-size: 1.5em;
 	font-weight: 500;
 	color: $secondary-color;
 	line-height: 120%;
 }
 
-h2 {
+h2, h2-like {
 	font-size: 1.3em;
 	font-weight: 400;
 	color: $secondary-color;
@@ -59,6 +64,58 @@ h2 {
 		padding: 40px 0;
 		line-height: 170%;
 		color: $tertiary-color;
+	}
+}
+
+h5, .h5-like {
+	font-size: 1em;
+	font-weight: 600;
+	color: $tertiary-color;
+}
+
+.some-figures {
+
+	.column-4 {
+		text-align: right;
+	}
+
+	.category {
+		font-size: 1.2em;
+		font-weight: 500;
+		color: $tertiary-color-dark;
+	}
+
+	.since {
+		font-size: 0.9em;
+		font-style: italic;
+		color: $tertiary-color;
+	}
+
+	.figure {
+		font-size: 1.85em;
+		font-weight: 700;
+		letter-spacing: -0.1em;
+		color: $primary-color;
+	}
+}
+
+.capability {
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 1em;
+		font-weight: 600;
+	}
+}
+
+.informations-container {
+
+	h1 {
+		font-weight: 600;
+	}
+
+	h2 {
+		color: $tertiary-color-light;
 	}
 }
 
